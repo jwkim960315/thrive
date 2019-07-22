@@ -1,26 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { PaperContainer, Circle, Layer } from '@psychobolt/react-paperjs'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const Shapes = () => <Circle center={[120, 50]} radius={35} fillColor="#00FF00" />;
+
+const App = props => (
+    <div>
+      <PaperContainer {...props}>
+        <Circle center={[80, 50]} radius={35} fillColor="red" />
+        <Layer>
+          <Shapes />
+        </Layer>
+      </PaperContainer>
     </div>
-  );
-}
+);
 
 export default App;
