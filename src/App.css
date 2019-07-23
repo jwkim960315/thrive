@@ -1,3 +1,172 @@
-html {
-    /*background-color: #29b0ff;*/
+body {
+    /*background-color: #e6e6e6;*/
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: 100px;
+    grid-template-areas:
+            "a a b b c c d d"
+            "a a b b c c d d"
+            "e e f f g g h h"
+            "e e f f g g h h"
+            "i i j j k k l l"
+            "i i j j k k l l";
+    align-items: center;
+    /*margin-top: 150px;*/
+}
+
+.book-button {
+    grid-area: e;
+    align-self: center;
+    justify-self: center;
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: none;
+    color: #49d3fc;
+    border: 5px solid #49d3fc;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 3px 1px -2px rgba(0,0,0,0.12);
+    transition: .2s all ease;
+}
+
+.book-button > div {
+    transition: .2s all ease;
+    font-size: 5px;
+}
+
+.book-button:hover {
+    transform: scale(1.2);
+    border: none;
+    background-color: #49d3fc;
+}
+
+.book-button:hover > svg {
+    color: white;
+}
+
+.book-button:hover > div {
+    color: white;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.movie-button {
+    grid-area: f;
+    align-self: center;
+    justify-self: center;
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: none;
+    color: #FC7249;
+    border: 5px solid #FC7249;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 3px 1px -2px rgba(0,0,0,0.12);
+    transition: .2s all ease;
+}
+
+.movie-button > div {
+    transition: .2s all ease;
+    font-size: 5px;
+}
+
+.movie-button:hover {
+    transform: scale(1.2);
+    border: none;
+    background-color: #FC7249;
+}
+
+.movie-button:hover > svg {
+    color: white;
+}
+
+.movie-button:hover > div {
+    color: white;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.sports-button {
+    grid-area: g;
+    align-self: center;
+    justify-self: center;
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: none;
+    color: #7349fc;
+    border: 5px solid #7349fc;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 3px 1px -2px rgba(0,0,0,0.12);
+    transition: .2s all ease;
+}
+
+.sports-button > div {
+    transition: .2s all ease;
+    font-size: 5px;
+}
+
+.sports-button:hover {
+    transform: scale(1.2);
+    border: none;
+    background-color: #7349fc;
+}
+
+.sports-button:hover > svg {
+    color: white;
+}
+
+.sports-button:hover > div {
+    color: white;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.misc-button {
+    grid-area: h;
+    align-self: center;
+    justify-self: center;
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: none;
+    color: #CC49FC;
+    border: 5px solid #CC49FC;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 3px 1px -2px rgba(0,0,0,0.12);
+    transition: .2s all ease;
+}
+
+.misc-button > div {
+    transition: .2s all ease;
+    font-size: 5px;
+}
+
+.misc-button:hover {
+    transform: scale(1.2);
+    border: none;
+    background-color: #CC49FC;
+}
+
+.misc-button:hover > svg {
+    color: white;
+}
+
+.misc-button:hover > div {
+    color: white;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+
+
+/* Colors */
+
+/*  red: #DB4437
+    yellow: #F4B400;
+    green: #0F9D58;
+
+*/
